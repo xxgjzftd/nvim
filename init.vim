@@ -12,3 +12,5 @@ let g:gruvbox_italic=1
 colorscheme gruvbox
 " colorscheme molokai
 
+set cursorline
+set cursorcolumn
