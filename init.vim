@@ -5,17 +5,22 @@ call plug#begin(stdpath('data') . '/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'tomasr/molokai'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
 let g:mapleader=' '
+
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'luna'
 
 set background=dark
 set termguicolors
 set ignorecase
 set smartcase
 set number
+set relativenumber
 set nowrap
 
 let g:gruvbox_italic=1
@@ -42,8 +47,6 @@ nnoremap ]<space> :<c-u>put =repeat(nr2char(10), v:count1)<cr>
 xnoremap < <gv
 xnoremap > >gv
 
-autocmd InsertLeave,WinEnter * set cursorline | set cursorcolumn 
+autocmd InsertLeave,WinEnter * set cursorline | set cursorcolumn
 autocmd InsertEnter,WinLeave * set nocursorline | set nocursorcolumn
-
-
 
